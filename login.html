@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login — SoundNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="brand" href="index.html">
+  <img src="logo.png" alt="SoundNest logo" class="logo-img">
+  <div>
+    <div style="font-weight:700">SoundNest</div>
+  </div>
+</a>
+
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="signup.html">Signup</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span></button>
+    </header>
+
+    <h1>Login</h1>
+    <form id="login-form" class="form">
+      <label>Email</label>
+      <input name="email" type="email" required>
+      <label>Password</label>
+      <input name="password" type="password" required>
+      <button class="btn" type="submit">Login</button>
+      <div style="margin-top:8px">
+        <a href="reset.html" class="btn ghost">Reset password</a>
+      </div>
+    </form>
+
+    <div class="footer">This is a demo login using localStorage</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

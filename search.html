@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Search — SoundNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a class="brand" href="index.html">
+  <img src="logo.png" alt="SoundNest logo" class="logo-img">
+  <div>
+    <div style="font-weight:700">SoundNest</div>
+  </div>
+</a>
+
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="trending.html">Trending</a>
+        <a href="search.html">Search</a>
+        <a href="login.html" class="btn ghost">Login</a>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span></button>
+    </header>
+
+    <h1>Search</h1>
+    <div class="searchbar">
+      <input id="search-input" placeholder="Search by title, artist, or tag">
+      <a href="#" class="btn" onclick="document.getElementById('search-input').focus()">Search</a>
+    </div>
+
+    <div id="search-grid" class="grid" style="margin-top:14px"></div>
+
+    <div class="footer">Search is client-side and matches title, artist, and tags</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

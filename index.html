@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Home — SoundNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+   <header class="header">
+ <a href="index.html"><img class="logo-img" src="logo.png" alt="SoundNest logo"></a>
+ <h3>SoundNest</h3>
+
+
+
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="trending.html">Trending</a>
+    <a href="search.html">Search</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <!-- removed static Login link — auth controls will be injected here -->
+  </nav>
+
+  <!-- Auth controls injected here by renderAuthControls('.auth-controls') -->
+  <div class="auth-controls" aria-live="polite"></div>
+
+  <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span></button>
+</header>
+
+
+    <section class="hero">
+      <div class="left">
+        <h1>Feel the purple vibes</h1>
+        <p>Discover trending music videos and albums. Play locally stored videos with album art.</p>
+        <div style="margin-top:12px">
+          <a href="trending.html" class="btn">Explore Trending</a>
+        </div>
+      </div>
+      <div style="width:260px">
+        <img src="bg.jpg" alt="bg" style="width:100%; border-radius:12px; box-shadow:var(--shadow)">
+      </div>
+    </section>
+
+    <h2 style="margin-top:6px">Featured</h2>
+    <div id="home-grid" class="grid"></div>
+
+    <div class="footer">Built for a music lover • SoundNest@Since 2026</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
